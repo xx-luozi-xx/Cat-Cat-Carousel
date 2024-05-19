@@ -10,7 +10,7 @@ struct Ring{
     int max = 0;
     int min = 0;
 
-    void formal();
+    void formate();
 };
 
 int n;
@@ -49,7 +49,7 @@ int main(){
                 itr = nxt[itr];
             }
             rings.push_back({new_ring,0,0,0});
-            rings.back().formal();
+            rings.back().formate();
         }
     }
 
@@ -68,7 +68,7 @@ int main(){
     return 0;
 }
 
-void Ring::formal(){
+void Ring::formate(){
     min = max = nodes.front();
 
     for(int num : nodes){
