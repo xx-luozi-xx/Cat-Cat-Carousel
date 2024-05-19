@@ -36,6 +36,7 @@ int main(){
         edge[a].push_back(b);
         edge[b].push_back(a);
     }
+    // int ring_n = 0;
     for(int i = 1; i <= n; ++i){
         int tag = i;
         int now = i;
@@ -53,8 +54,11 @@ int main(){
             }
             rings.push_back({new_ring,0,0,0});
             rings.back().formate();
+            // ring_n += rings.back().nodes.size();
         }
     }
+    // assert(ring_n == n);
+    // assert(rings.size() == 1);
 
     Ring* ans = &(rings.front());
     for(auto itr = rings.begin(); itr != rings.end(); ++itr){
