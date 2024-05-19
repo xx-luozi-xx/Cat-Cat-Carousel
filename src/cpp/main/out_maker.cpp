@@ -3,8 +3,8 @@
 #include <string>
 using namespace std;
 
-const char path_in[] =   "../in/";
-const char path_out[]=   "../out/";
+const char path_in[] =   "./data/in/";
+const char path_out[]=   "./data/out/";
 const char exe_name[]=  "std.exe";
 const int  num_file = 20;
 

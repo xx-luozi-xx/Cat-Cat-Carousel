@@ -1,0 +1,17 @@
+# opencv include目录
+CV_INCLUDE_DIR = "E:\opencv_for_MinGW\install\include"
+# opencv库目录
+CV_LIB_DIR = "E:\opencv_for_MinGW\install\x64\mingw\lib"
+# opencv库文件
+CV_LIB_FILE = opencv_world490
+
+
+
+# 源文件目录
+SRC_DIR = src/cpp
+# include文件目录
+H_DIR = src/h
+# 对象文件目录
+OBJ_DIR = build
+# 目标文件文件夹
+BIN_DIR = bin

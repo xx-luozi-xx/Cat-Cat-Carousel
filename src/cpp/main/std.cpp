@@ -1,6 +1,8 @@
 #include <list>
 #include <iostream>
 #include <algorithm>
+
+#include <assert.h>
 using namespace std;
 const int MAX_SIZE = 1e5 +30;
 
@@ -28,11 +30,12 @@ int main(){
     for(int i = 0; i < n; ++i){
         int a, b;
         cin >> a >> b;
+        assert(1<=a  and a<= n);
+        assert(1<=b  and b<= n);
         nxt[a] = b;
         edge[a].push_back(b);
         edge[b].push_back(a);
     }
-
     for(int i = 1; i <= n; ++i){
         int tag = i;
         int now = i;
@@ -91,6 +94,7 @@ int dfs(int src){
     int ret = 1;
     for(auto b : edge[src]){
         if(vit[b] == false){
+            vit[b] = true;
             ret += dfs(b);
         }
     }
