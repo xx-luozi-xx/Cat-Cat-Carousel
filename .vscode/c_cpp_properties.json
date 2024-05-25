@@ -1,20 +1,20 @@
 {
-  "configurations": [
-    {
-      "name": "windows-gcc-x64",
-      "includePath": [
-        "${workspaceFolder}/**"
-      ],
-      "defines": [
-        "_DEBUG",
-        "UNICODE",
-        "_UNICODE"
-      ],
-      "compilerPath": "C:/Strawberry/c/bin/gcc.exe",
-      "intelliSenseMode": "windows-gcc-x64",
-      "cStandard": "${default}",
-      "cppStandard": "${default}"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "E:/MinGW/MinGW/bin/g++.exe",
+            "intelliSenseMode": "windows-gcc-x64",
+            "cStandard": "${default}",
+            "cppStandard": "${default}"
+        }
+    ],
+    "version": 4
 }
