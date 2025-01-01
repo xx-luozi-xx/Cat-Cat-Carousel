@@ -6,7 +6,7 @@ using namespace std;
 const char path_in[] =   "./data/_in/";
 const char path_out[]=   "./data/_out/";
 const char exe_name[]=  "std.exe";
-const int  num_file = 8;
+const int  num_file = 12;
 
 int main(){
     for(int i = 1; i <= num_file; ++i){

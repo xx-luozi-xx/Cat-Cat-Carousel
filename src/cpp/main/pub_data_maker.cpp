@@ -12,8 +12,8 @@ const int MAX_SIZE = 100+30;
 const int POS_RANGE = 100; 
 const int F_RANGE = 5000; 
 
-const int point_num = 1000;
-const int ring_num = point_num/20;
+const int point_num = 1e5;
+const int ring_num = rand()%400+100;// point_num/20;
 
 int main(int argc, char** argv){
     int tp = argv[1][0]-'0';
@@ -58,8 +58,8 @@ int main(int argc, char** argv){
     for(int i = 0; i <= edge.size(); ++i){
         hash.push_back(i);
     }
-    // random_shuffle(hash.begin()+1, hash.end());
-    // random_shuffle(edge.begin(), edge.end());
+    random_shuffle(hash.begin()+1, hash.end());
+    random_shuffle(edge.begin(), edge.end());
 
     cout << edge.size() << '\n';
     for(auto e : edge){
